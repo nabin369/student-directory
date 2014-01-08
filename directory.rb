@@ -1,4 +1,4 @@
-
+=begin
 # array
 students = [ 
 			{:names => "Biwek Shrestha",  :cohort =>:january},
@@ -14,6 +14,19 @@ students = [
 			{:names => "Berta Gutierrez", :cohort =>  :january},
 			{:names => "Ayaz", :cohort => :january}
 			]
+=end
+
+def input_students
+	puts "Please enter student name"
+	students = []
+	name = gets.chomp
+	 while !name.empty? do
+	 	students << {:names => name, :cohort => :january}
+	 	puts "Now we have #{students.length} students"
+	 	name = gets.chomp
+	 end
+	return students
+end
 
 # 1. print list of students  
 def print_header
@@ -33,6 +46,9 @@ end
 def print_footer(students)
 	puts "Overall we have #{students.length} students"
 end
+
+# Get Student names
+students = input_students
 
 # Prints header, students names, and footer
 print_header
