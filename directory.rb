@@ -1,3 +1,6 @@
+# assign a variable
+students_count = 12
+
 # 1. print list of students  
 puts "----------------------------------------"
 puts "Makers Academy - January Cohort Students"
@@ -15,5 +18,4 @@ puts "Abraham Thomas"
 puts "Berta Gutierrez"
 puts "Ayaz"
 # 3. Then we print the overall number of students
-print "Overall we have 12 "
-puts "students"
+puts "Overall we have #{students_count} students"
