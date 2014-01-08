@@ -16,13 +16,25 @@ students = [
 			]
 
 # 1. print list of students  
-puts "----------------------------------------"
-puts "Makers Academy - January Cohort Students"
-puts "----------------------------------------"
+def print_header
+	puts "----------------------------------------"
+	puts "Makers Academy - January Cohort Students"
+	puts "----------------------------------------"
+end
 
-students.each do |stu|
-	puts stu
+# Method for 
+def print(arr_name)
+	arr_name.each do |stu|
+		puts stu
+	end
 end
 
 # 3. Then we print the overall number of students
-puts "Overall we have #{students.length} students"
+def print_footer(students)
+	puts "Overall we have #{students.length} students"
+end
+
+# Prints header, students names, and footer
+puts print_header
+puts print(students)
+puts print_footer(students)
